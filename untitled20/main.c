@@ -1,15 +1,10 @@
 #include<stdio.h>
-//交換三個變數質//
-int a,b,c,temp;
+//大小寫轉換//
 int main(){
-    a = 4; b = 5; c = 6;
-    printf("%d\n%d\n%d\n\n", a, b, c);
-    temp = a;
-    a = b;
-    b = c;
-    c = temp;
-    printf("%d\n", a);
-    printf("%d\n", b);
-    printf("%d\n", c);
-    return 0 ;
+    char input, output;
+    printf("Enter an English alphabet: ");
+    scanf("%c", &input);
+    output = input + ('a'-'A');
+    printf("%c", output);
+    return 0;
 }
